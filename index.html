@@ -1,0 +1,220 @@
+<!-- Help with 2nd pokemon type being removed....example typing 151- leaves bug on mew
+removing image border -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<div id="background"></div>
+<div class="container">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pokemon.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- <link rel="icon" href="https://lh5.googleusercontent.com/proxy/_INbvMofK3sOtMtKHC9LJWaTsdS011gEtdcCtzG7OKd8pPfqqbs6Fxcyacq1hSiBuYmzrf_ZT9rKWxIpmleWdGVcPM-4ZEEENnFEnDm2AgKQ1qTNnT4jZZvyp8NdnBRYCbTLdYJfC4NzczU"> -->
+        <!-- <link rel="icon" type="image/png" href="assets/pokeballicon.png"> -->
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+
+        <title>Pokemon API</title>
+    </head>
+
+
+
+    <body>
+
+
+        <!-- <img id='zubatFlying' src='https://24.media.tumblr.com/61f253c9d874fbc94b89bc80f41b1061/tumblr_mx18ilSv0x1rv6iido1_250.gif'> -->
+        <img id='zubatFlying' src='https://24.media.tumblr.com/61f253c9d874fbc94b89bc80f41b1061/tumblr_mx18ilSv0x1rv6iido1_250.gif'>
+        <img id='charizardFlying' src="https://lh4.googleusercontent.com/proxy/GLIYDQKvvZRO_5bZuanLVQoj14gh3ylXnegiM8Gx6phB3WT9mW8WZrsbQKOh1iez1vujkaAEX9uKq0EtO9kd589wTyF1BuNE"></img>
+        <img id='mewAppearing' src='https://66.media.tumblr.com/fefba2132259d53fc0c84a6b109292d1/tumblr_ml0aiv9W3k1ql4lj6o1_500.gif'></img>
+        <img id='lugiaFlying' src='https://i.ya-webdesign.com/images/lugia-transparent-flying-2.gif'></img>
+        <img id='clouds' src='https://i.pinimg.com/originals/d8/5c/af/d85caf6012eea80bd824acaf42cba3b0.png'><img>
+        <img id='clouds2' src='https://i.pinimg.com/originals/d8/5c/af/d85caf6012eea80bd824acaf42cba3b0.png'><img>
+        <img id='clouds3' src='https://i.pinimg.com/originals/d8/5c/af/d85caf6012eea80bd824acaf42cba3b0.png'><img>
+        <img id='clouds4' src='https://i.pinimg.com/originals/d8/5c/af/d85caf6012eea80bd824acaf42cba3b0.png'><img>
+        <img id='clouds5' src='https://i.pinimg.com/originals/d8/5c/af/d85caf6012eea80bd824acaf42cba3b0.png'><img>
+        <img id='clouds6' src='https://i.pinimg.com/originals/d8/5c/af/d85caf6012eea80bd824acaf42cba3b0.png'><img>
+        <div id="title">
+
+            <img id="pokemonLogo" src="https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png"></img>
+
+
+        </div>
+
+
+        <!-- <iframe src="http://docs.google.com/uc?export=open&amp;id=15RrmhX2IByvnZdxkOetng_mGVz7sj7Vt" muted allow="autoplay" allow="loop" id="audio" style="display: inline"></iframe>
+        <audio id="player" autoplay loop>
+        <source src="http://docs.google.com/uc?export=open&amp;id=15RrmhX2IByvnZdxkOetng_mGVz7sj7Vt" muted type="audio/mp3">
+            </audio> -->
+
+
+        <!-- <iframe src="assets/pokemonthemeremix.mp3" autoplay='0' muted allow="loop" id="iframeaudio" style="display: none"></iframe> -->
+        <audio id="playAudio" loop>
+            <source src="assets/pokemonthemeremix.mp3" autoplay='0' type="audio/mp3">
+        </audio>
+
+
+
+
+        <!-- <iframe src="assets/pokemonthemeremix.mp3" allow="autoplay" allow="loop" id="audio" style="display: inline"></iframe>
+        <audio id="player" muted autoplay loop>
+            <source src="assets/pokemonthemeremix.mp3" autoplay muted type="audio/mp3">
+                </audio> -->
+
+
+        <!-- <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/780108331%3Fsecret_token%3Ds-UdNxGTC73YS&color=%23141414&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe> -->
+
+        <!-- YOUTUBE AUTO PLAY/MUTED -->
+
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/tBZPeYZIVH8?autoplay=1&mute=0&muted=0’" autoplay='1' frameborder="0" allow="autoplay" allowfullscreen></iframe> -->
+
+
+
+
+
+        <!-- cool banner thingy -->
+        <!-- https://cdn.dribbble.com/users/813012/screenshots/2872715/attachments/592899/pokemon-template-poke-stop-test.gif -->
+
+        <div id="textFieldWrap">
+
+            <form>
+                <!-- <p>Enter the name of a pokemon or a number!</p> -->
+                <!-- <img id="pokeball" src="https://i.ya-webdesign.com/images/pokeball-sprite-png-11.gif"> -->
+                <input id='pokemonNameField' placeholder="Name or #"></input>
+                <!-- <button type="submit" id="search">Search!</button> -->
+                <!-- <img id="pokeball" src="https://i.ya-webdesign.com/images/pokeball-sprite-png-11.gif"> -->
+
+            </form>
+            <div id="controlButtons">
+                <input type="button" value="PLAY&#127925;" id='playButton' onclick="playAudio()">
+                <input type="button" value="STOP" id='pauseButton' onclick="pauseAudio()">
+            </div>
+            <script>
+                var audio = document.getElementById("playAudio")
+
+                function playAudio() {
+                    // audio.currentTime = 96.2
+                    audio.play();
+                }
+
+                function pauseAudio() {
+                    audio.pause();
+                }
+            </script>
+
+        </div>
+
+        <div class="box">
+
+            <div id="statsWrap">
+
+                <img id='pokedex2' src="https://i.imgur.com/S4PvnLW.jpg" alt="">
+
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Speed
+                        <span class="speedStat badge badge-primary badge-pill"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Special Def.
+                        <span class="spDefStat badge badge-primary badge-pill"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Special Att.
+                        <span class="spAttStat badge badge-primary badge-pill"></span>
+                    </li>
+                    <li class=" list-group-item d-flex justify-content-between align-items-center">
+                        Defense
+                        <span class="defenseStat badge badge-primary badge-pill"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Attack
+                        <span class="attackStat badge badge-primary badge-pill"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        HP
+                        <span class="hpStat badge badge-primary badge-pill"></span>
+                    </li>
+                </ul>
+            </div>
+            <img class='pokeballLoading' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fe48665f-9fb2-4bc1-b2df-60d8fbdd82a0/dcyr9or-c77d5729-8279-4837-868c-8e664b50fe87.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZlNDg2NjVmLTlmYjItNGJjMS1iMmRmLTYwZDhmYmRkODJhMFwvZGN5cjlvci1jNzdkNTcyOS04Mjc5LTQ4MzctODY4Yy04ZTY2NGI1MGZlODcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mP3DK2y0asEU6IZ9-LGszcgOsYHDttCnT3iWi6fHKfU"
+                alt=""></img>
+            <div id="poxedexWrap">
+
+
+
+
+                <img id="pokedex" src="https://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/3510cdb9cf222cd0cec19fdfea4bddbb/pokedex.png?imageOpt=1&fit=bounds&width=1047">
+                <div id="profilePicWrap">
+
+                    <img id="profilePic"></img>
+
+                </div>
+                <div class="pokemonNameWrap">
+                    <h1 class="pokemonName"></h1>
+                </div>
+                <img src="" id="typeImage1"></img>
+                <img src="" id="typeImage2"></img>
+
+
+
+                </img>
+
+
+
+
+                <div id="rotaterWrap">
+                    <div id="imageWrap">
+
+                        <img id="pokemonImage"></img>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div id='wildAppears'>
+
+
+            </div>
+
+
+        </div>
+        <div id="laprasCropWrap"> <img id='laprasSwimming' src='https://vignette.wikia.nocookie.net/pokemon/images/3/3d/Lapras_BW.gif/revision/latest/top-crop/width/220/height/220?cb=20120628010423'></img>
+        </div>
+        <img id='pikachuRunning' src=' https://media.giphy.com/media/kuWN0iF9BLQKk/giphy.gif'>
+</div>
+
+<script src="pokemon.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</div>
+
+</html>
