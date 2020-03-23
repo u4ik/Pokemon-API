@@ -57,8 +57,7 @@
         -moz-animation-delay: 2s;
         top: 500px;
     }
-    
-    #imageWrap {
+    /* #imageWrap {
         display: block;
         width: 50%;
         margin-left: auto;
@@ -70,7 +69,7 @@
         animation-direction: alternate;
         animation-iteration-count: infinite;
         bottom: 500px;
-    }
+    } */
     
     #pokemonImage {
         display: none;
@@ -227,22 +226,23 @@
     
     @-webkit-keyframes flyTopRight {
         0% {
-            right: 400%;
-            top: -200%;
-            transform: scale(1);
-            -webkit-filter: blur(0.8px);
+            right: 100%;
+            top: 50%;
+            transform: scale(1.4)scaleX(-1);
+            -webkit-filter: blur(.35px);
         }
         80% {
-            right: -1000%;
-            top: 300%;
-            transform: scale(-1);
-            -webkit-filter: blur(1.2px);
+            transform: scaleX(-1);
+            right: -150%;
+            top: 30%;
+            transform: scale(.3)scaleX(-1);
+            -webkit-filter: blur(1px);
         }
         100% {
-            right: -1000%;
-            top: 300%;
-            transform: scale(-1);
-            -webkit-filter: blur(1.2px);
+            right: -150%;
+            top: 30%;
+            transform: scale(.3)scaleX(-1);
+            -webkit-filter: blur(1px);
         }
     }
     
@@ -290,7 +290,6 @@
         /* width: 10%; */
         top: 306px;
         margin-left: 20%;
-        filter: blur(.8px);
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -o-transform: translate3d(0, 0, 0);
@@ -300,10 +299,10 @@
         transform: scaleX(-1);
         filter: FlipH FlipV;
         -ms-filter: "FlipH FlipV";
-        -webkit-animation: flyTop 35s linear infinite, flyRight 65s linear infinite;
-        -moz-animation: flyTop 35s linear infinite, flyRight 65s linear infinite;
-        -o-animation: flyTop 35s linear infinite, flyRight 65s linear infinite;
-        animation-delay: -25s;
+        -webkit-animation: flyTopRight 22s linear infinite;
+        -moz-animation: flyTopRight 22s linear infinite;
+        -o-animation: flyTopRight 2s linear infinite;
+        animation-delay: -195s;
     }
     
     #mewAppearing {
